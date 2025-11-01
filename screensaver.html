@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CPHFW Infoscreen - a digital exploration of sustainable fashion, knowledge and learning.">
+    <title>CPHFW Infoscreen| Copenhagen Fashion Week</title> <!-- Informative title for better SEO -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<!-- Screensaver Page
+Purpose: Fullscreen landing page;
+Interaction: User clicks anywhere to explore;
+-->
+<script src="assets/js/screensaver.js" defer></script>
+<!-- using defer attribute to make sure DOM finished loading before executing the script -->
+
+<body>
+    <main class="screensaver"> <!-- Semantic container -->
+        <img class="brand-mark"
+        src="assets/img/cphfw-logo.png"
+        alt="Copenhagen Fashion Week">
+
+        <!-- Our CTA to click anywhere on the screen -->
+       <div class="cta">
+        <a id="start-link" href="index.html" aria-label="Start Exploring Copenhagen Fashio Week Infosreen">START EXPLORING</a>
+        <!-- Using aria-label to help screenreaders. Might not be a thing on an "actual" infoscreen but still a nice thing to have -->
+        <p>Click anywhere on the screen</p>
+       </div>
+    </main>
+    <div id="loader">
+        <img src="assets/img/loader-icon.svg" alt="Loading icon" width="60" height="60">
+        <p>Loading...</p>
+    </div>
+</body>
+
+</html>
