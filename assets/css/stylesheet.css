@@ -255,14 +255,14 @@ body {
 }
 
 .button-grid a:nth-child(3) span {
-  top: 15%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -35%);
   bottom: auto;
 }
 
 .button-grid a:nth-child(4) span {
-  top: 15%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -35%);
   bottom: auto;
@@ -296,7 +296,7 @@ body {
   text-decoration: none;
   color: black;
   font-family: "Didot LT STD", serif;
-  font-size: clamp(1.4rem, 1.2vw + 0.3rem, 2.2rem);
+  font-size: clamp(1.8rem, 1.2vw + 0.3rem, 2.2rem);
   letter-spacing: 0.15em;
   transition: opacity 0.3s;
 }
