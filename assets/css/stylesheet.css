@@ -278,21 +278,21 @@ body {
   text-align: center;
 }
 
-.button-grid a:nth-child(1) span {
+.button-grid a:nth-child(2) span {
   bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
   top: auto;
 }
 
-.button-grid a:nth-child(2) span {
+.button-grid a:nth-child(3) span {
   top: 18%;
   left: 50%;
   transform: translate(-50%, -35%);
   bottom: auto;
 }
 
-.button-grid a:nth-child(3) span {
+.button-grid a:nth-child(4) span {
   top: 18%;
   left: 50%;
   transform: translate(-50%, -35%);
@@ -351,6 +351,7 @@ body {
     background-attachment: scroll;
     /* Making sure background scrolls on small screen otherwise it would be white space as background doesn't cover it */
     padding-bottom: 10rem;
+    padding-top: 10rem;
   }
 
   .screensaver {
