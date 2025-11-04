@@ -242,7 +242,7 @@ body {
   height: auto;
 }
 
-.home-btn > span {
+.home-btn>span {
   position: absolute;
   color: black;
   width: 90%;
@@ -345,6 +345,44 @@ body {
   opacity: 0.5;
 }
 
+/*---Quiz Page---*/
+.quiz-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.quiz-grid h1 {
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.quiz-btn {
+  display: inline-block;
+  margin-top: 16rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  opacity: 0.65;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+/* --- Here starts responsivnes --- */
+
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
@@ -379,7 +417,7 @@ body {
 
   .button-grid a:not(.mission-btn) {
     width: 30vw;
-    max-width: 300px; 
+    max-width: 300px;
     aspect-ratio: 1 / 1;
     max-height: 300px;
   }
@@ -439,10 +477,13 @@ body {
 
 /*--- Small screens ---*/
 @media (max-width: 900px) {
+
   html,
   body {
-    overflow: auto;
-    height: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
   }
 
   .homepage {
@@ -452,6 +493,10 @@ body {
     background-attachment: scroll;
     padding-bottom: 10rem;
     padding-top: 10rem;
+  }
+
+  .quiz-btn {
+    margin-top: 8rem;
   }
 
   .screensaver {
