@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Avenir Next Condensed Demi Bold";
-  src: url("../fonts/avenir-next-condensed-regular.otf") format ("opentype");
+  src: url("../fonts/avenir-next-condensed-demi-bold.ttf") format ("truetype");
 }
 
 /* General Rules */
@@ -101,7 +101,7 @@ body {
   color: #fff;
   cursor: inherit;
   /* inherits the pointer from .screensaver */
-  font-family: "Avenir Next Condensed Regular", Arial, sans-serif;
+  font-family: "Avenir Next Condensed Demi Bold", Arial, sans-serif;
   font-weight: 600;
 }
 
