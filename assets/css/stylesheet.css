@@ -33,9 +33,6 @@
   src: url("../fonts/avenir-next-condensed-regular.otf") format ("opentype");
 }
 
-
-
-
 /* General Rules */
 /* We remove default browser margin and padding because we want this to look like "fullscreen" */
 /* We remove(make it hidden) overflow (hide all the scrolling) */
