@@ -367,7 +367,7 @@ body {
   font-family: "Didot LT STD", serif;
   font-size: clamp(4rem, 2.5vw + 0.5rem, 8.125rem);
   letter-spacing: 0.05em;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   color: white;
   text-transform: uppercase;
 }
@@ -394,8 +394,8 @@ body {
 }
 
 .materials-grid a {
-  width: clamp(200px, 30vw, 350px);
-  height: clamp(200px, 30vw, 350px);
+  width: clamp(200px, 15vw, 350px);
+  height: clamp(200px, 15vw, 350px);
 }
 
 .materials-grid a img {
@@ -411,6 +411,34 @@ body {
   bottom: auto;
 }
 
+/* Slider buttons positioning */
+.slider {
+  position: relative; /* create a positioning context */
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background:  none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 3;
+  transition: background 0.2s ease;
+}
+
+/* Position left/right arrows */
+#prevBtn {
+  left: -5rem;
+}
+
+#nextBtn {
+  right: -5rem;
+}
 
 
 
@@ -524,10 +552,8 @@ body {
 
   html,
   body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
+    height: auto;
   }
 
   .homepage {
@@ -564,6 +590,17 @@ body {
     grid-template-columns: 1fr;
     row-gap: 3rem;
     justify-items: center;
+  }
+
+    .homepage-materials {
+      overflow-y: auto;
+    }
+
+  .materials-grid {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+    margin-bottom: 10rem;
   }
 
   .mission-btn {
