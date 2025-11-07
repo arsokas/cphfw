@@ -443,7 +443,7 @@ body {
   margin-top: 1rem;
 }
 
-/* Start of 404 Error Page */
+/* 404 Page */
 .error-page {
   position: relative;
   width: 100%;
@@ -453,50 +453,95 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
-.error-box {
-  position: absolute;
-  top: 8.5rem;
-  left: 3rem;
-  width: 40rem;
-  height: 22rem;
-  background-color: rgba(255, 255, 255, 0.351);
+/* Glass box effect */
+.error-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  max-width: 700px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Headline */
 .error-text {
-  position: absolute;
-  top: 13rem;
-  left: 23rem;
   font-family: "Didot LT STD", serif;
-  font-size: 6rem;
-  color: #ffffff;
-  margin: 0;
+  font-size: clamp(3rem, 5vw, 6rem);
+  margin-bottom: 1rem;
   text-transform: uppercase;
-  z-index: 10;
-  transform: translate(-50%, -50%);
-
 }
 
+/* Subtext */
 .error-subtext {
-  position: absolute;
-  top: 17rem;
-  left: 23.5rem;
   font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
-  margin: 0;
-  z-index: 10;
-  transform: translateX(-50%);
-  max-width: 35rem;
-  line-height: 1.4;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 40rem;
 }
+
+/* “Back Home” link */
+.back-home {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 2rem;
+  color: white;
+  font-family: "Avenir Next", Arial, sans-serif;
+  padding: 2.8rem 3.8rem;
+  font-size: 2rem;
+}
+
+
+/* --- Flying Heels Game --- */
+.shoe-game {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.flying-shoe {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+  transition: transform 0.1s ease;
+}
+
+/* Score Display */
+.scoreboard {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "Avenir Next Condensed Demi Bold", Arial, sans-serif;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1.2rem;
+  z-index: 100;
+  user-select: none;
+}
+
+.flying-shoe {
+  animation: spin 4s linear infinite;
+}
+
 
 /* Start of Materials Page */
 
