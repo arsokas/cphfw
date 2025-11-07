@@ -493,7 +493,7 @@ body {
 
 .homepage-materials h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 2.5vw + 0.5rem, 8.125rem);
+  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -524,6 +524,16 @@ body {
 .materials-grid a {
   width: clamp(200px, 15vw, 350px);
   height: clamp(200px, 15vw, 350px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.materials-grid a.show {
+  opacity: 1;
+}
+
+.materials-grid a.fade-in {
+  animation: fadeIn 0.4s ease;
 }
 
 .materials-grid a img {
