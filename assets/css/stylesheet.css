@@ -428,48 +428,11 @@ body {
 
 .homepage-brands h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 2.5vw + 0.5rem, 8.125rem);
+  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
   text-transform: uppercase;
-}
-
-.brands-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  column-gap: 2rem;
-  padding: 3rem;
-  z-index: 2;
-}
-
-.brands-grid::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(217, 217, 217, 0.4);
-  z-index: -1;
-}
-
-.brands-grid a {
-  width: clamp(200px, 15vw, 350px);
-  height: clamp(200px, 15vw, 350px);
-}
-
-.brands-grid a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.brands-grid a span {
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -35%);
-  bottom: auto;
 }
 
 .see-full-list {
@@ -478,13 +441,6 @@ body {
   font-family: "Avenir Next", Arial, sans-serif;
   font-size: 1.5rem;
   margin-top: 1rem;
-  display: block;
-  text-align: left;
-  margin-left: 45rem;
-}
-
-.see-full-list:hover {
-  text-decoration: underline;
 }
 
 /* Start of 404 Error Page */
@@ -571,7 +527,7 @@ body {
 }
 
 /* Transparent box behind material images */
-.materials-grid {
+.menu-grid {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -583,7 +539,7 @@ body {
 }
 
 /* The semi-transparent box behind the buttons */
-.materials-grid::before {
+.menu-grid::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -591,7 +547,7 @@ body {
   z-index: -1; /* places it behind the buttons */
 }
 
-.materials-grid a {
+.menu-grid a {
   position: relative;
   width: clamp(200px, 15vw, 350px);
   height: clamp(200px, 15vw, 350px);
@@ -600,21 +556,21 @@ body {
   text-transform: uppercase;
 }
 
-.materials-grid a.show {
+.menu-grid a.show {
   opacity: 1;
 }
 
-.materials-grid a.fade-in {
+.menu-grid a.fade-in {
   animation: fadeIn 0.4s ease;
 }
 
-.materials-grid a img {
+.menu-grid a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.materials-grid a span {
+.menu-grid a span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -650,6 +606,18 @@ body {
 
 #nextBtn {
   right: -5rem;
+}
+
+
+.footer {
+  position: relative; /* so the arrow can be positioned relative to the footer */
+}
+
+/* Back arrow above footer, left side */
+.back-arrow {
+  position: fixed;
+  bottom: 10rem;
+  left: 2rem;
 }
 
 /* --- Large screens down to laptops --- */
@@ -778,7 +746,7 @@ body {
       overflow-y: auto;
     }
 
-  .materials-grid {
+  .menu-grid {
     grid-template-columns: 1fr;
     row-gap: 3rem;
     justify-items: center;

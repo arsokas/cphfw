@@ -1,5 +1,5 @@
 
-const grid = document.getElementById('materialsGrid');
+const grid = document.getElementById('menuGrid');
 const items = Array.from(grid.querySelectorAll('a'));
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
