@@ -434,7 +434,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Brands Homepage */
 .brands-grid {
   position: relative;
   display: grid;
@@ -470,6 +469,76 @@ body {
   left: 50%;
   transform: translate(-50%, -35%);
   bottom: auto;
+}
+
+.see-full-list {
+  color: white;
+  text-decoration: none;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: left;
+  margin-left: 45rem;
+}
+
+.see-full-list:hover {
+  text-decoration: underline;
+}
+
+/* Start of 404 Error Page */
+.error-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/Empty Closet Error Page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.error-box {
+  position: absolute;
+  top: 8.5rem;
+  left: 3rem;
+  width: 40rem;
+  height: 22rem;
+  background-color: rgba(255, 255, 255, 0.351);
+}
+
+.error-text {
+  position: absolute;
+  top: 13rem;
+  left: 23rem;
+  font-family: "Didot LT STD", serif;
+  font-size: 6rem;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+
+}
+
+.error-subtext {
+  position: absolute;
+  top: 17rem;
+  left: 23.5rem;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+  z-index: 10;
+  transform: translateX(-50%);
+  max-width: 35rem;
+  line-height: 1.4;
 }
 
 /* Start of Materials Page */
