@@ -665,6 +665,98 @@ body {
   left: 2rem;
 }
 
+/* Layout for Certain Material / Designer / Brand Page */
+
+.article-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/material1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.article-page h1 {
+  font-family: "Didot LT STD", serif;
+  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  letter-spacing: 0.05em;
+  margin-bottom: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Transparent box behind material images */
+.article-grid {
+  position: relative;
+  display: flex;           /* put children in a row */
+  align-items: center;     /* vertical alignment */
+  justify-content: center; /* keep everything centered in the box */
+  column-gap: 10rem;
+  padding: 1rem 2rem 1rem 5rem;
+  z-index: 2;
+  width: 60vw;
+}
+
+/* The semi-transparent box behind the buttons */
+.article-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(217, 217, 217, 0.4); /* light transparent white */
+  z-index: -1; /* places it behind the buttons */
+}
+
+.article-grid a {
+  position: relative;
+  z-index: 3;
+  overflow: visible;
+  height: clamp(250px, 45vh, 500px); /* limits vertical size */
+  transform: translateY(-3rem); /* gives slight “pop-out” */
+}
+
+.article-grid a img {
+  width: auto;
+  height: 120%;
+  max-height: 120%; /* allows it to extend slightly beyond box */
+  object-fit: contain;
+}
+
+.article-text {
+  width: 60%;
+}
+
+.article-grid a.show {
+  opacity: 1;
+}
+
+.article-text {
+  font-family: "Avenir Next";
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.button-to-quiz {
+  color: black;
+  text-decoration: none;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.875rem;
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.8rem 2.5rem;
+  border-radius: 40px; 
+  display: inline-block;
+  width: 340px;
+  text-align: center;
+}
+
+
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
