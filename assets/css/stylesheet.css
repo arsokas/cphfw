@@ -705,6 +705,7 @@ body {
   width: 60vw;
 }
 
+
 /* The semi-transparent box behind the buttons */
 .article-grid::before {
   content: "";
@@ -727,10 +728,6 @@ body {
   height: 120%;
   max-height: 120%; /* allows it to extend slightly beyond box */
   object-fit: contain;
-}
-
-.article-text {
-  width: 60%;
 }
 
 .article-grid a.show {
@@ -799,6 +796,22 @@ body {
   .brand-icon {
     width: clamp(160px, 9vw, 240px);
   }
+
+  .article-grid {
+    width: 70vw;
+    column-gap: 6rem;
+    padding: 2rem 3rem;
+  }
+
+  .article-grid a {
+    height: clamp(240px, 40vh, 460px);
+    transform: translateY(-2rem);
+  }
+
+  .article-text {
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    width: 55%;
+  }
 }
 
 /* --- Laptop screens --- */
@@ -831,6 +844,41 @@ body {
 
   .brand-icon {
     width: clamp(130px, 9vw, 200px);
+  }
+
+  .article-grid {
+    width: 85vw;
+    padding: 1rem 2rem;
+    column-gap: 4rem;
+    overflow: visible;
+  }
+
+  .article-grid::before {
+    background: rgba(217, 217, 217, 0.45);
+  }
+
+  .article-text {
+    width: 80%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+  }
+
+  .article-grid a {
+    transform: none;
+    height: clamp(250px, 35vh, 400px);
+  }
+
+  #prevBtn {
+    left: -3rem;
+  }
+
+  #nextBtn {
+    right: -3rem;
+  }
+
+  .article-grid a img {
+    height: 100%;
+    max-height: 100%;
   }
 }
 
@@ -883,11 +931,14 @@ body {
       overflow-y: auto;
     }
 
-  .menu-grid {
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
-    justify-items: center;
-    margin-bottom: 10rem;
+ .article-grid {
+    width: 90vw;
+    flex-direction: column;   /* keep text + image stacked */
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    column-gap: 0;
+    row-gap: 1.5rem;
   }
 
   .mission-btn {
@@ -913,5 +964,53 @@ body {
     height: auto;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
+  }
+
+  .article-grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90vw;
+    padding: 1rem;
+    row-gap: 1.5rem;
+  }
+
+  .article-text {
+    width: 90%;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    text-align: left;
+  }
+
+  .article-grid a {
+    height: clamp(200px, 45vh, 380px);
+    transform: none;
+  }
+
+  .article-grid a img {
+    height: 100%;
+    max-height: 100%;
+  } 
+
+  .button-to-quiz {
+    width: clamp(200px, 80%, 300px);
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    margin-top: 2rem;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  #prevBtn {
+    left: 0.5rem;
+  }
+
+  #nextBtn {
+    right: 0.5rem;
   }
 }
