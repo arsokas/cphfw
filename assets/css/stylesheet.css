@@ -956,6 +956,15 @@ body {
     padding-top: 10rem;
   }
 
+  .wuiz-page {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-attachment: scroll;
+    padding-bottom: 13rem;
+    padding-top: 10rem;
+  }
+
   .quiz-btn {
     margin-top: 8rem;
   }
