@@ -139,6 +139,7 @@ body {
   /* our desired size of the SVG inside the loader */
   height: 100px;
 }
+
 /* End of Sreensaver.html */
 
 /* START OF THE INDEX STYLING */
@@ -320,7 +321,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
-  align-items: flex-end; /* aligns button toward bottom */
+  align-items: flex-end;
+  /* aligns button toward bottom */
   justify-content: center;
   padding: 2rem;
   box-sizing: border-box;
@@ -328,7 +330,8 @@ body {
 
 .quiz-grid h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem);
+  /* simple viewport width (vw), 1vw is 1% of your screen width */
   margin-bottom: 2.5rem;
   color: white;
   text-transform: uppercase;
@@ -388,7 +391,8 @@ body {
 
 .homepage-brands h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -524,7 +528,8 @@ body {
 
 .homepage-materials h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -539,8 +544,9 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 2rem;
-  padding: 3rem 4.5rem ;
-  z-index: 2; /* keeps content above the overlay */
+  padding: 3rem 4.5rem;
+  z-index: 2;
+  /* keeps content above the overlay */
 }
 
 /* The semi-transparent box behind the buttons */
@@ -548,8 +554,10 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(217, 217, 217, 0.4); /* light transparent white */
-  z-index: -1; /* places it behind the buttons */
+  background: rgba(217, 217, 217, 0.4);
+  /* light transparent white */
+  z-index: -1;
+  /* places it behind the buttons */
 }
 
 .menu-grid a {
@@ -581,12 +589,14 @@ body {
   transform: translate(-50%, -50%);
   bottom: auto;
   z-index: 2;
-  background: rgba(217, 217, 217, 0.8); /* light transparent white */
+  background: rgba(217, 217, 217, 0.8);
+  /* light transparent white */
 }
 
 /* Slider buttons positioning */
 .slider {
-  position: relative; /* create a positioning context */
+  position: relative;
+  /* create a positioning context */
 }
 
 .slider button {
@@ -594,7 +604,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  background:  none;
+  background: none;
   color: white;
   font-size: 2rem;
   cursor: pointer;
@@ -615,7 +625,8 @@ body {
 
 
 .footer {
-  position: relative; /* so the arrow can be positioned relative to the footer */
+  position: relative;
+  /* so the arrow can be positioned relative to the footer */
 }
 
 /* Back arrow above footer, left side */
@@ -646,7 +657,8 @@ body {
 
 .article-page h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 3rem;
   color: white;
@@ -656,9 +668,12 @@ body {
 /* Transparent box behind material images */
 .article-grid {
   position: relative;
-  display: flex;           /* put children in a row */
-  align-items: center;     /* vertical alignment */
-  justify-content: center; /* keep everything centered in the box */
+  display: flex;
+  /* put children in a row */
+  align-items: center;
+  /* vertical alignment */
+  justify-content: center;
+  /* keep everything centered in the box */
   column-gap: 10rem;
   padding: 1rem 2rem 1rem 5rem;
   z-index: 2;
@@ -671,22 +686,27 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(217, 217, 217, 0.4); /* light transparent white */
-  z-index: -1; /* places it behind the buttons */
+  background: rgba(217, 217, 217, 0.4);
+  /* light transparent white */
+  z-index: -1;
+  /* places it behind the buttons */
 }
 
 .article-grid a {
   position: relative;
   z-index: 3;
   overflow: visible;
-  height: clamp(250px, 45vh, 500px); /* limits vertical size */
-  transform: translateY(-3rem); /* gives slight “pop-out” */
+  height: clamp(250px, 45vh, 500px);
+  /* limits vertical size */
+  transform: translateY(-3rem);
+  /* gives slight “pop-out” */
 }
 
 .article-grid a img {
   width: auto;
   height: 120%;
-  max-height: 120%; /* allows it to extend slightly beyond box */
+  max-height: 120%;
+  /* allows it to extend slightly beyond box */
   object-fit: contain;
 }
 
@@ -707,7 +727,7 @@ body {
   margin-top: 4rem;
   background: rgba(255, 255, 255, 0.65);
   padding: 0.8rem 2.5rem;
-  border-radius: 40px; 
+  border-radius: 40px;
   display: inline-block;
   width: 340px;
   text-align: center;
@@ -915,41 +935,42 @@ body {
   }
 
   .article-grid a img {
-  width: auto;
-  height: 100%;
-  max-height: 100%; /* allows it to extend slightly beyond box */
-  object-fit: contain;
-  padding-top: 2rem;
-}
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    /* allows it to extend slightly beyond box */
+    object-fit: contain;
+    padding-top: 2rem;
+  }
 
-.quiz-page-start .question-text {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  width: 40%;
-  color: #111;
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 2rem;
-  line-height: 1.4;
-  z-index: 2;
-}
+  .quiz-page-start .question-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 40%;
+    color: #111;
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.4;
+    z-index: 2;
+  }
 
 
-.quiz-page-start .quiz-box {
-  position: absolute;
-  top: 60%;
-  right: 5%;
-  transform: translateY(-50%);
-  width: 30rem;
-  height: 40rem;
-  background-color: rgba(240, 240, 240, 1);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .quiz-page-start .quiz-box {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 30rem;
+    height: 40rem;
+    background-color: rgba(240, 240, 240, 1);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 
@@ -1021,34 +1042,34 @@ body {
   }
 
 
-.quiz-page-start .question-text {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  width: 40%;
-  color: #111;
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 2rem;
-  line-height: 1.4;
-  z-index: 2;
-}
+  .quiz-page-start .question-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 40%;
+    color: #111;
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1.4;
+    z-index: 2;
+  }
 
 
-.quiz-page-start .quiz-box {
-  position: absolute;
-  top: 60%;
-  right: 5%;
-  transform: translateY(-50%);
-  width: 30rem;
-  height: 40rem;
-  background-color: rgba(240, 240, 240, 1);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .quiz-page-start .quiz-box {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 30rem;
+    height: 40rem;
+    background-color: rgba(240, 240, 240, 1);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*--- Small screens ---*/
@@ -1123,19 +1144,20 @@ body {
     justify-items: center;
   }
 
-    .homepage-materials {
-      overflow-y: auto;
-    }
+  .homepage-materials {
+    overflow-y: auto;
+  }
 
-    .menu-grid {
-      grid-template-columns: 1fr;
+  .menu-grid {
+    grid-template-columns: 1fr;
     row-gap: 3rem;
     justify-items: center;
-    }
+  }
 
- .article-grid {
+  .article-grid {
     width: 90vw;
-    flex-direction: column;   /* keep text + image stacked */
+    flex-direction: column;
+    /* keep text + image stacked */
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
@@ -1191,7 +1213,7 @@ body {
   .article-grid a img {
     height: 100%;
     max-height: 100%;
-  } 
+  }
 
   .button-to-quiz {
     width: clamp(200px, 80%, 300px);
@@ -1240,7 +1262,8 @@ body {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(6px);
-    padding: 2rem 1rem 4.5rem; /* extra bottom space for the button */
+    padding: 2rem 1rem 4.5rem;
+    /* extra bottom space for the button */
     border-radius: 15px;
   }
 
@@ -1263,19 +1286,18 @@ body {
   .quiz-page-start {
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 8rem;
+    padding-top: 6rem;
     background-attachment: scroll;
   }
 
   .quiz-page-start .quiz-question-number {
     position: static;
     text-align: center;
-    margin-bottom: 2rem;
   }
 
   .quiz-page-start .questions-box-background {
     top: auto;
-    bottom: 0;
+    bottom: -3rem;
     height: auto;
     min-height: 20rem;
   }
@@ -1284,9 +1306,17 @@ body {
     position: static;
     transform: none;
     width: 85%;
-    margin-top: 2rem;
-    
-  height: 30rem;
+    height: 20rem;
+  }
+
+  .quiz-page-start .question-text {
+    font-size: 1.2rem;
+    width: 100%;
+    top: 60%;
+  }
+
+  .quiz-page-start .question-title {
+    font-size: 1.5rem;
   }
 
   .quiz-page-start .quiz-content {
