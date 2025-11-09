@@ -956,9 +956,6 @@ body {
   }
 
   .quiz-page {
-  height: auto;
-  min-height: 100vh;
-  overflow-y: hidden; /* prevent extra scroll space */
   background-attachment: scroll;
   padding: 0; /* remove that 13rem bottom padding */
 }
