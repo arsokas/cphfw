@@ -942,7 +942,7 @@ body {
     min-height: 100vh;
     overflow-y: auto;
     background-attachment: scroll;
-    padding-bottom: 10rem;
+    padding-bottom: 14rem;
     padding-top: 10rem;
   }
 
@@ -954,11 +954,6 @@ body {
     padding-bottom: 13rem;
     padding-top: 10rem;
   }
-
-  .quiz-page {
-  background-attachment: scroll;
-  padding: 0; /* remove that 13rem bottom padding */
-}
 
   .quiz-btn {
     margin-top: 8rem;
