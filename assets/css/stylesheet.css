@@ -147,7 +147,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   padding: 2rem 3rem;
   display: flex;
   align-items: center;
@@ -449,7 +448,7 @@ body {
 
 .homepage-brands h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -585,7 +584,7 @@ body {
 
 .homepage-materials h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -707,7 +706,7 @@ body {
 
 .article-page h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 3rem;
   color: white;
@@ -934,7 +933,7 @@ body {
     min-height: 100vh;
     overflow-y: auto;
     background-attachment: scroll;
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
     padding-top: 8rem;
   }
 
@@ -956,14 +955,13 @@ body {
     padding-top: 10rem;
   }
 
-  .wuiz-page {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-    background-attachment: scroll;
-    padding-bottom: 13rem;
-    padding-top: 10rem;
-  }
+  .quiz-page {
+  height: auto;
+  min-height: 100vh;
+  overflow-y: hidden; /* prevent extra scroll space */
+  background-attachment: scroll;
+  padding: 0; /* remove that 13rem bottom padding */
+}
 
   .quiz-btn {
     margin-top: 8rem;
@@ -1091,7 +1089,7 @@ body {
 
   .quiz-grid h1 {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     right: auto;
@@ -1102,7 +1100,7 @@ body {
   /* Center info box on mobile */
   .quiz-info {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -1116,7 +1114,7 @@ body {
   /* Move the button visually inside the box */
   .quiz-btn {
     position: absolute;
-    bottom: 45%;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -1126,5 +1124,6 @@ body {
     background-color: #ffffff;
     color: rgb(7, 7, 7);
     opacity: 0.9;
+    text-align: center;
   }
 }
