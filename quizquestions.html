@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>CPHFW Infoscreen | Quiz questions</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
+
 <body>
     <!--  Navigation -->
     <header class="navbar">
@@ -15,14 +17,20 @@
             <img src="assets/img/cphfw-logo1.png" alt="Copenhagen Fashion Week Logo" class="brand-icon">
         </a>
     </header>
-    <main class="quiz-page">
-        <h1 class="quiz-question-number">Question 1/5</h1>
+    <main class="quiz-page-start">
+        <h1 class="quiz-question-number" id="question-number">Question 1/5</h1>
         <div class="questions-box-background">
         </div>
+
+        <!-- Transparent question area -->
+        <div class="questions-box-background">
+            <h2 class="question-text" id="question-text">What is this and that?</h2>
+        </div>
+
         <div class="quiz-box">
             <div class="quiz-content">
-                <h2 class="question-title">Select your answer:</h2>
-                <div class="answer-buttons">
+                <h2 class="question-title" id="question-title">Select your answer:</h2>
+                <div class="answer-buttons" id="answer-buttons">
                     <button class="answer-btn">Answer A</button>
                     <button class="answer-btn">Answer B</button>
                     <button class="answer-btn">Answer C</button>
@@ -30,5 +38,12 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <a href="index.html" class="quiz-back-arrow">
+            <img src="assets/img/back-arrow.svg" alt="Back">
+        </a>
+    </footer>
+    <script src="assets/js/quiz.js"></script>
 </body>
+
 </html>

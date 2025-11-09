@@ -367,67 +367,6 @@ body {
   line-height: 1.6;
 }
 
-/*---Start of Quiz Questions Page---*/
-.questions-box-background {
-  width: 100%;
-  height: 22rem;
-  background-color: rgba(224, 224, 224, 0.558);
-  margin-top: 7rem;
-}
-
-.quiz-box {
-  width: 25rem;
-  height: 33rem;
-  background-color: rgb(214, 214, 214);
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
-.quiz-content {
-  padding: 2rem;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.quiz-question-number {
-  font-family: "Didot LT STD", serif;
-  font-size:4rem;
-  color: white;
-  position: absolute;
-  top: 5rem;
-  left: 3rem;
-}
-
-.question-title {
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 1.5rem;
-  color: #333;
-  margin: 0 0 2rem 0;
-  text-align: center;
-}
-
-.answer-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.answer-btn {
-  padding: 1.5rem 2rem;
-  font-family: "Avenir Next Condensed Demi Bold", Arial, sans-serif;
-  font-size: 1.1rem;
-  background-color: #999;
-  color: white;
-  border: none;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
 /* Brands Homepage*/
 .homepage-brands {
   position: relative;
@@ -774,6 +713,147 @@ body {
   text-align: center;
 }
 
+/*--- Quiz Questions Page (isolated) ---*/
+.quiz-page-start {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/quiz_baner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Light overlay section behind text */
+.quiz-page-start .questions-box-background {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 35rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Question number */
+.quiz-page-start .quiz-question-number {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  font-family: "Didot LT STD", serif;
+  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  color: white;
+  z-index: 2;
+}
+
+.quiz-page-start .quiz-box {
+  position: absolute;
+  top: 60%;
+  right: 15%;
+  transform: translateY(-50%);
+  width: 30rem;
+  height: 40rem;
+  background-color: rgba(240, 240, 240, 1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inner quiz content */
+.quiz-page-start .quiz-content {
+  width: 85%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading inside the box */
+.quiz-page-start .question-title {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Answer buttons stack */
+.quiz-page-start .answer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Each answer button */
+.quiz-page-start .answer-btn {
+  width: 100%;
+  padding: 1.3rem 0;
+  font-family: "Avenir Next Condensed Regular", Arial, sans-serif;
+  font-size: 2.5rem;
+  background-color: #887E7E;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-back-arrow {
+  position: fixed;
+  bottom: 3rem;
+  left: 2rem;
+}
+
+/* Text inside transparent box */
+.quiz-page-start .question-text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: #111;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
@@ -841,6 +921,36 @@ body {
   object-fit: contain;
   padding-top: 2rem;
 }
+
+.quiz-page-start .question-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: #111;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+
+.quiz-page-start .quiz-box {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 30rem;
+  height: 40rem;
+  background-color: rgba(240, 240, 240, 1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 /* --- Laptop screens --- */
@@ -909,6 +1019,36 @@ body {
     height: 100%;
     max-height: 100%;
   }
+
+
+.quiz-page-start .question-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: #111;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+
+.quiz-page-start .quiz-box {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 30rem;
+  height: 40rem;
+  background-color: rgba(240, 240, 240, 1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 /*--- Small screens ---*/
@@ -1118,5 +1258,43 @@ body {
     color: rgb(7, 7, 7);
     opacity: 0.9;
     text-align: center;
+  }
+
+  .quiz-page-start {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8rem;
+    background-attachment: scroll;
+  }
+
+  .quiz-page-start .quiz-question-number {
+    position: static;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .quiz-page-start .questions-box-background {
+    top: auto;
+    bottom: 0;
+    height: auto;
+    min-height: 20rem;
+  }
+
+  .quiz-page-start .quiz-box {
+    position: static;
+    transform: none;
+    width: 85%;
+    margin-top: 2rem;
+    
+  height: 30rem;
+  }
+
+  .quiz-page-start .quiz-content {
+    padding: 2rem 1rem;
+  }
+
+  .quiz-page-start .answer-btn {
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
