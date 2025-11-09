@@ -319,24 +319,27 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 6rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-end; /* aligns button toward bottom */
+  justify-content: center;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
 .quiz-grid h1 {
-  font-size: 100px;
+  font-family: "Didot LT STD", serif;
+  font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem); /* simple viewport width (vw), 1vw is 1% of your screen width */
+  margin-bottom: 2.5rem;
   color: white;
   text-transform: uppercase;
-  font-family: "Didot LT STD", serif;
+  top: 5%;
+  position: absolute;
+  top: 10%;
+  right: 25%;
 }
 
 .quiz-btn {
   display: inline-block;
-  margin-top: 15rem;
   padding: 1rem 2rem;
   font-size: 2rem;
   color: rgb(7, 7, 7);
@@ -345,6 +348,23 @@ body {
   opacity: 0.65;
   text-decoration: none;
   border-radius: 25px;
+  margin-bottom: 4vw;
+}
+
+/* Transparent info box on the left side */
+.quiz-info {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /*---Start of Quiz Questions Page---*/
@@ -424,6 +444,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .homepage-brands h1 {
@@ -812,6 +833,14 @@ body {
     font-size: clamp(1rem, 2vw, 1.6rem);
     width: 55%;
   }
+
+  .article-grid a img {
+  width: auto;
+  height: 100%;
+  max-height: 100%; /* allows it to extend slightly beyond box */
+  object-fit: contain;
+  padding-top: 2rem;
+}
 }
 
 /* --- Laptop screens --- */
@@ -900,6 +929,33 @@ body {
     padding-top: 10rem;
   }
 
+  .homepage-brands {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-attachment: scroll;
+    padding-bottom: 10rem;
+    padding-top: 8rem;
+  }
+
+  .homepage-materials {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-attachment: scroll;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+
+  .article-page {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-attachment: scroll;
+    padding-bottom: 13rem;
+    padding-top: 10rem;
+  }
+
   .quiz-btn {
     margin-top: 8rem;
   }
@@ -929,6 +985,12 @@ body {
 
     .homepage-materials {
       overflow-y: auto;
+    }
+
+    .menu-grid {
+      grid-template-columns: 1fr;
+    row-gap: 3rem;
+    justify-items: center;
     }
 
  .article-grid {
@@ -1012,5 +1074,48 @@ body {
 
   #nextBtn {
     right: 0.5rem;
+  }
+
+  .footer img {
+    width: 40px;
+  }
+
+  .quiz-grid h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    font-size: clamp(3rem, 10vw, 5rem);
+    text-align: center;
+  }
+
+  /* Center info box on mobile */
+  .quiz-info {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    padding: 2rem 1rem 4.5rem; /* extra bottom space for the button */
+    border-radius: 15px;
+  }
+
+  /* Move the button visually inside the box */
+  .quiz-btn {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 1.4rem;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: rgb(7, 7, 7);
+    opacity: 0.9;
   }
 }
