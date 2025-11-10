@@ -989,6 +989,10 @@ body {
   .homepage-materials h1 {
     font-size: 3rem;
   }
+
+   .article-page h1 {
+    font-size: 3rem;
+  }
   
   .back-home {
     font-size: 1rem;
