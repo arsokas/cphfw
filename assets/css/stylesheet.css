@@ -834,7 +834,7 @@ body {
 /*
 /* */
 /* --- Large screens down to laptops --- */
-@media (max-width: 1700px) and (min-width: 1251px) {
+@media (max-width: 1900px) and (min-width: 1251px) {
 
   .homepage {
   min-height: 100vh;
