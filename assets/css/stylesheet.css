@@ -757,6 +757,26 @@ body {
   z-index: 1;
 }
 
+.quiz-page-start .quiz-feedback-container {
+  position: absolute;
+  top: 70%;
+  left: 5rem;
+  width: 40%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
+  z-index: 2;
+  font-family: "Avenir Next", Arial, sans-serif;
+  padding: 2rem;
+  margin: auto;
+}
+
+.quiz-page-start .quiz-feedback-container p{
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 2rem;
+  margin: auto;
+}
+
 /* Question number */
 .quiz-page-start .quiz-question-number {
   position: absolute;
@@ -834,7 +854,7 @@ body {
 /* Text inside transparent box */
 .quiz-page-start .question-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 15%;
   transform: translateY(-50%);
   width: 40%;
@@ -921,7 +941,8 @@ body {
 
   .quiz-page-start .question-text {
     position: absolute;
-    top: 50%;
+    top: 15%;
+    text-align: center;
     left: 5%;
     transform: translateY(-50%);
     width: 40%;
@@ -1146,8 +1167,7 @@ body {
 }
 
 /*--- Small screens ---*/
-@media (max-width: 900px) {
-
+@media (max-width: 902px) {
   html,
   body {
     overflow-y: auto;

@@ -61,10 +61,9 @@ function showQuestion(index) {
 
     // Give it the same CSS class as the other buttons
     btn.classList.add("answer-btn");
-
+    
     // When clicked, run the function handleAnswer()
     btn.addEventListener("click", () => handleAnswer());
-
     // Add the button into the "answer-buttons" container
     answerButtons.appendChild(btn);
   });
@@ -81,7 +80,7 @@ function handleAnswer() {
   // If there are still questions left...
   if (currentQuestion < questions.length) {
     // ...wait a bit and then show the next one
-    setTimeout(() => showQuestion(currentQuestion), 1200);
+    setTimeout(() => showQuestion(currentQuestion), 4000);
   } else {
     // If we’ve reached the end of the quiz...
     setTimeout(() => {
@@ -119,15 +118,16 @@ function showNotification(text) {
   note.style.padding = "1rem 2rem";
   note.style.borderRadius = "20px";
   note.style.fontFamily = "Avenir Next, sans-serif";
-  note.style.fontSize = "1.2rem";
+  note.style.fontSize = "2rem";
   note.style.boxShadow = "0 4px 10px rgba(0,0,0,0.1)";
   note.style.zIndex = "999";
+
 
   // Add the note to the page
   document.body.appendChild(note);
 
   // Remove it after 1 second
-  setTimeout(() => note.remove(), 1000);
+  setTimeout(() => note.remove(), 4000);
 }
 
 // --- Start the quiz for the first time ---
