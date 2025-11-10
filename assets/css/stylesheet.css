@@ -1068,6 +1068,12 @@ body {
     width: 40px;
   }
 
+  .quiz-grid h1 {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+  }
+
 }
 
 /* --- Laptop screens --- */
