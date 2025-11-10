@@ -197,7 +197,6 @@ body {
 .homepage h1 {
   font-family: "Didot LT STD", serif;
   font-size: clamp(2rem, 6vw, 8.125rem);
-  letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
   text-align: center;
@@ -834,20 +833,26 @@ body {
 /*
 /* */
 /* --- Large screens down to laptops --- */
-@media (max-width: 1900px) and (min-width: 1251px) {
+@media (max-width: 1700px) and (min-width: 1251px) {
 
   .homepage {
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 8rem;
+}
+
+.homepage h1 {
+  font-size: 4rem;
 }
 
 .button-grid {
   max-width: 1600px;
+  
+  column-gap: 0rem;
 }
 
 .home-btn img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }
 
   .cta {
