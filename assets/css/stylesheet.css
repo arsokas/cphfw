@@ -170,6 +170,7 @@ body {
   opacity: 1;
   cursor: pointer;
 }
+
 /* */
 /*
 /*
@@ -261,6 +262,7 @@ body {
   font-family: "Didot LT STD Italic", serif;
   font-weight: normal;
 }
+
 /* */
 /*
 /*
@@ -732,7 +734,7 @@ body {
   margin: auto;
 }
 
-.quiz-page-start .quiz-feedback-container p{
+.quiz-page-start .quiz-feedback-container p {
   font-family: "Avenir Next", Arial, sans-serif;
   font-size: 2rem;
   margin: auto;
@@ -825,6 +827,7 @@ body {
   line-height: 1.4;
   z-index: 2;
 }
+
 /* */
 /*
 /*
@@ -835,25 +838,42 @@ body {
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
+  /* Start of Index.html */
   .homepage {
-  min-height: 100vh;
-  padding-top: 8rem;
-}
+    min-height: 100vh;
+    padding-top: 8rem;
+  }
 
-.homepage h1 {
-  font-size: 4rem;
-}
+  .homepage h1 {
+    font-size: 4rem;
+  }
 
-.button-grid {
-  max-width: 1600px;
-  
-  column-gap: 0rem;
-}
+  .button-grid {
+    max-width: 1600px;
 
-.home-btn img {
-  width: 300px;
-  height: 300px;
-}
+    column-gap: 0rem;
+  }
+
+  .home-btn img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home-btn>span {
+    width: 70%;
+    max-width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .quiz-title .quiz-the {
+    font-family: "Didot LT STD", Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+  /* End of Index.html */
+
+
+
+
 
   .cta {
     position: absolute;
@@ -934,8 +954,8 @@ body {
   }
 
   .back-arrow {
-  bottom: 6rem;
-}
+    bottom: 6rem;
+  }
 
 
   .homepage-brands h1 {
@@ -1046,9 +1066,9 @@ body {
   }
 
   .home-btn {
-  width: 200px;
-  height: 200px;
-}
+    width: 200px;
+    height: 200px;
+  }
 
   .button-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -1129,6 +1149,7 @@ body {
 
 /*--- Small screens ---*/
 @media (max-width: 902px) {
+
   html,
   body {
     overflow-y: auto;
@@ -1372,30 +1393,30 @@ body {
   }
 
   .quiz-page-start .quiz-feedback-container {
-  position: absolute;
-  top: 80%;
-  left: 2rem;
-  width: 70%;
-  height: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-50%);
-  z-index: 2;
-  font-family: "Avenir Next", Arial, sans-serif;
-  padding: 2rem;
-  margin: auto;
-}
+    position: absolute;
+    top: 80%;
+    left: 2rem;
+    width: 70%;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: "Avenir Next", Arial, sans-serif;
+    padding: 2rem;
+    margin: auto;
+  }
 
-.quiz-page-start .quiz-feedback-container p{
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 1rem;
-  margin: auto;
-}
+  .quiz-page-start .quiz-feedback-container p {
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-size: 1rem;
+    margin: auto;
+  }
 
-.home-btn>span {
-  font-size: 1.5rem;
-}
+  .home-btn>span {
+    font-size: 1.5rem;
+  }
 
-.quiz-title .quiz-me {
-  font-size: 1.5rem;
-}
+  .quiz-title .quiz-me {
+    font-size: 1.5rem;
+  }
 }
