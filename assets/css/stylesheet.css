@@ -982,8 +982,20 @@ body {
     width: 40px;
   }
 
-  .homepage-brands, .homepage-materials h1 {
+  .homepage-brands  h1 {
     font-size: 3rem;
+  }
+
+  .homepage-materials h1 {
+    font-size: 3rem;
+  }
+  
+  .back-home {
+    font-size: 1rem;
+  }
+
+  .error-content {
+        padding: 1rem 1rem;
   }
 
   .quiz-page-start .quiz-question-number{
