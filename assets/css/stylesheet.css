@@ -878,7 +878,7 @@ body {
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
-    .homepage {
+  .homepage {
     height: 100vh;
     overflow: hidden;
     padding-top: 10rem;
@@ -982,7 +982,7 @@ body {
     width: 40px;
   }
 
-  .homepage-brands  h1 {
+  .homepage-brands h1 {
     font-size: 3rem;
   }
 
@@ -990,74 +990,87 @@ body {
     font-size: 3rem;
   }
 
-   .article-page h1 {
+  .article-page h1 {
     font-size: 3rem;
   }
-  
+
+  .article-text {
+    font-size: 1rem;
+  }
+
+  .article-grid {
+    padding: 1rem;
+  }
+
+  .button-to-quiz {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
   .back-home {
     font-size: 1rem;
     padding: 0.8rem 3.8rem;
   }
 
   .error-content {
-        padding: 1rem 1rem;
+    padding: 1rem 1rem;
   }
 
-  .quiz-page-start .quiz-question-number{
+  .quiz-page-start .quiz-question-number {
     font-size: 2rem;
   }
 
   .quiz-page-start .quiz-box {
-  position: absolute;
-  top: 60%;
-  right: 15%;
-  transform: translateY(-50%);
-  width: 30rem;
-  height: 30rem;
-  background-color: rgba(240, 240, 240, 1);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    transform: translateY(-50%);
+    width: 30rem;
+    height: 30rem;
+    background-color: rgba(240, 240, 240, 1);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.quiz-page-start .answer-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-}
+  .quiz-page-start .answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
 
-/* Each answer button */
-.quiz-page-start .answer-btn {
-  width: 100%;
-  padding: 1.3rem 0;
-  font-family: "Avenir Next Condensed Regular", Arial, sans-serif;
-  font-size: 1.5rem;
-  background-color: #887E7E;
-  color: white;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+  /* Each answer button */
+  .quiz-page-start .answer-btn {
+    width: 100%;
+    padding: 1.3rem 0;
+    font-family: "Avenir Next Condensed Regular", Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: #887E7E;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 
-.quiz-page-start .questions-box-background {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  height: 20rem;
-  background-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-50%);
-  z-index: 1;
-}
+  .quiz-page-start .questions-box-background {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
 
-.quiz-back-arrow img {
-  width: 40px;
-}
+  .quiz-back-arrow img {
+    width: 40px;
+  }
 
 }
 
