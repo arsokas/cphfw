@@ -951,6 +951,11 @@ body {
     width: 40px;
   }
 
+  .back-arrow {
+  bottom: 6rem;
+}
+
+
   .homepage-brands h1 {
     font-size: 3rem;
   }
@@ -964,16 +969,17 @@ body {
   }
 
   .article-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .article-grid {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .button-to-quiz {
     font-size: 1rem;
     margin-top: 0.5rem;
+    width: 7vw;
   }
 
   .back-home {
