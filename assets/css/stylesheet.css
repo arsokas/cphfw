@@ -237,11 +237,6 @@ body {
   height: 300px;
 }
 
-.home-btn img {
-  width: 100%;
-  height: auto;
-}
-
 .home-btn>span {
   position: absolute;
   color: black;
@@ -643,7 +638,7 @@ body {
   /* places it behind the buttons */
 }
 
-.article-grid a {
+.article-grid {
   position: relative;
   z-index: 3;
   overflow: visible;
@@ -653,7 +648,7 @@ body {
   /* gives slight “pop-out” */
 }
 
-.article-grid a img {
+.article-grid img {
   width: auto;
   height: 120%;
   max-height: 120%;
