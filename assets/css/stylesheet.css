@@ -617,6 +617,62 @@ body {
   text-transform: uppercase;
 }
 
+/* Article images layout */
+.article-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 10rem);
+  padding: 2rem;
+}
+
+.article-box {
+  background-color: white;
+  position: absolute;
+}
+
+.box-1 {
+  margin-left: 2rem;
+  left: 2rem;
+  top: 4rem;
+  width: 55rem;
+  height: 20rem;
+}
+
+.box-2 {
+  left: 61rem;
+  top: 0rem;
+  width: 12rem;
+  height: 28rem;
+}
+
+.box-3 {
+  right: 4rem;
+  bottom: 1rem;
+  width: 20rem;
+  height: 25rem;
+}
+
+.article-text {
+  position: absolute;
+  color: white;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
+.article-text-1 {
+  left: 4rem;
+  top: 25rem;
+  max-width: 55rem;
+}
+
+.article-text-2 {
+  right: 4rem;
+  bottom: 26rem;
+  max-width: 21rem;
+}
+
 /* Transparent box behind material images */
 .article-grid {
   position: relative;
