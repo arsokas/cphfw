@@ -252,7 +252,6 @@ body {
   font-size: clamp(1.4rem, 1.6vw + 0.2rem, 2.5rem);
 }
 
-
 .quiz-title .quiz-the {
   font-family: "Didot LT STD", Arial, sans-serif;
   font-size: 1.625rem;
@@ -467,7 +466,6 @@ body {
   font-size: 2rem;
 }
 
-
 /* --- Flying Heels Game --- */
 .shoe-game {
   position: fixed;
@@ -505,7 +503,6 @@ body {
 .flying-shoe {
   animation: spin 4s linear infinite;
 }
-
 
 /* Start of Materials Page */
 
@@ -623,7 +620,6 @@ body {
   right: -5rem;
 }
 
-
 .footer {
   position: relative;
   /* so the arrow can be positioned relative to the footer */
@@ -679,7 +675,6 @@ body {
   z-index: 2;
   width: 60vw;
 }
-
 
 /* The semi-transparent box behind the buttons */
 .article-grid::before {
@@ -850,31 +845,6 @@ body {
   z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
@@ -961,7 +931,6 @@ body {
     line-height: 1.4;
     z-index: 2;
   }
-
 
   .quiz-page-start .quiz-box {
     position: absolute;
@@ -1141,7 +1110,6 @@ body {
     max-height: 100%;
   }
 
-
   .quiz-page-start .question-text {
     position: absolute;
     top: 50%;
@@ -1154,7 +1122,6 @@ body {
     line-height: 1.4;
     z-index: 2;
   }
-
 
   .quiz-page-start .quiz-box {
     position: absolute;
