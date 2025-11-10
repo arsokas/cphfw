@@ -237,6 +237,11 @@ body {
   height: 300px;
 }
 
+.home-btn img {
+  width: 100%;
+  height: auto;
+}
+
 .home-btn>span {
   position: absolute;
   color: black;
@@ -612,62 +617,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Article images layout */
-.article-container {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 10rem);
-  padding: 2rem;
-}
-
-.article-box {
-  background-color: white;
-  position: absolute;
-}
-
-.box-1 {
-  margin-left: 2rem;
-  left: 2rem;
-  top: 4rem;
-  width: 55rem;
-  height: 20rem;
-}
-
-.box-2 {
-  left: 61rem;
-  top: 0rem;
-  width: 12rem;
-  height: 28rem;
-}
-
-.box-3 {
-  right: 4rem;
-  bottom: 1rem;
-  width: 20rem;
-  height: 25rem;
-}
-
-.article-text {
-  position: absolute;
-  color: white;
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.6;
-  max-width: 40rem;
-}
-
-.article-text-1 {
-  left: 4rem;
-  top: 25rem;
-  max-width: 55rem;
-}
-
-.article-text-2 {
-  right: 4rem;
-  bottom: 26rem;
-  max-width: 21rem;
-}
-
 /* Transparent box behind material images */
 .article-grid {
   position: relative;
@@ -919,7 +868,7 @@ body {
     padding: 2rem 3rem;
   }
 
-  .article-grid a {
+  .article-grid {
     height: clamp(240px, 40vh, 460px);
     transform: translateY(-2rem);
   }
@@ -929,7 +878,7 @@ body {
     width: 55%;
   }
 
-  .article-grid a img {
+  .article-grid img {
     width: auto;
     height: 100%;
     max-height: 100%;
@@ -1118,7 +1067,7 @@ body {
     text-align: center;
   }
 
-  .article-grid a {
+  .article-grid {
     transform: none;
     height: clamp(250px, 35vh, 400px);
   }
@@ -1131,7 +1080,7 @@ body {
     right: -3rem;
   }
 
-  .article-grid a img {
+  .article-grid img {
     height: 100%;
     max-height: 100%;
   }
@@ -1284,12 +1233,12 @@ body {
     text-align: left;
   }
 
-  .article-grid a {
+  .article-grid {
     height: clamp(200px, 45vh, 380px);
     transform: none;
   }
 
-  .article-grid a img {
+  .article-grid img {
     height: 100%;
     max-height: 100%;
   }
