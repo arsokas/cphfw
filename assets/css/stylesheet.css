@@ -1059,7 +1059,7 @@ body {
 
 /* --- Laptop screens --- */
 @media (max-width: 1250px) and (min-width: 901px) {
-
+  /* Start of Index.html */
   .homepage {
     height: 100vh;
     overflow: hidden;
@@ -1080,6 +1080,9 @@ body {
   .button-grid span, .button-grid .quiz-the {
     font-size: 1.10rem;
   }
+  /* End of Index.html */ 
+
+
 
   .brand-icon {
     width: clamp(130px, 9vw, 200px);
