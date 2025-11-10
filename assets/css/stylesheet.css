@@ -1339,6 +1339,8 @@ body {
 
   .footer img {
     width: 49px;
+    position: absolute;
+    bottom: -1rem;
   }
 
   .quiz-grid h1 {
