@@ -826,7 +826,13 @@ body {
   line-height: 1.4;
   z-index: 2;
 }
-
+/* */
+/*
+/*
+/* START OF RESPONSIVE RULES */
+/*
+/*
+/* */
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
