@@ -170,9 +170,13 @@ body {
   opacity: 1;
   cursor: pointer;
 }
-
-
-/* Homepage/Index.html layout */
+/* */
+/*
+/*
+/* START OF INDEX.HTLM */
+/*
+/*
+/* */
 .homepage {
   position: relative;
   width: 100%;
@@ -182,7 +186,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,7 +196,7 @@ body {
 
 .homepage h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(2rem, 6vw, 4rem);
+  font-size: clamp(2rem, 6vw, 8.125rem);
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
   color: white;
@@ -200,7 +204,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Home Buttons with Images */
 .button-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -209,7 +212,7 @@ body {
   column-gap: 4rem;
   row-gap: 2.5rem;
   width: 100%;
-  max-width: 1500px;
+  max-width: 2056px;
   margin: 0 auto;
 }
 
@@ -223,7 +226,6 @@ body {
 }
 
 .home-btn {
-  font-family: "Didot LT STD", Arial, sans-serif;
   font-weight: 700;
   position: relative;
   display: flex;
@@ -233,36 +235,40 @@ body {
   overflow: hidden;
   text-decoration: none;
   text-align: center;
-  width: 300px;
-  height: 300px;
 }
 
 .home-btn img {
-  width: 100%;
-  height: auto;
+  width: 450px;
+  height: 450px;
 }
 
 .home-btn>span {
+  font-family: "Didot LT STD", Arial, sans-serif;
   position: absolute;
   color: black;
   width: 90%;
   max-width: 90%;
   text-align: center;
   line-height: 1.2;
-  font-size: clamp(1.1rem, 1.4vw, 3rem);
+  font-size: clamp(1.1rem, 2rem, 3rem);
 }
 
 .quiz-title .quiz-the {
   font-family: "Didot LT STD", Arial, sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.08em;
+  font-size: 2rem;
 }
 
 .quiz-title .quiz-me {
   font-family: "Didot LT STD Italic", serif;
-  font-style: italic;
   font-weight: normal;
 }
+/* */
+/*
+/*
+/* END OF INDEX.HTLM */
+/*
+/*
+/* */
 
 /*---Start of Quiz Page---*/
 .quiz-page {
