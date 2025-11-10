@@ -171,27 +171,6 @@ body {
   cursor: pointer;
 }
 
-/* Our Mission Button */
-.mission-btn {
-  grid-column: 1 / -1;
-  width: 750px;
-  height: 115px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  margin: 0 auto;
-}
-
-.mission-btn img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Homepage/Index.html layout */
 .homepage {
@@ -203,7 +182,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 20rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,10 +190,20 @@ body {
   box-sizing: border-box;
 }
 
+.homepage h1 {
+  font-family: "Didot LT STD", serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Home Buttons with Images */
 .button-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   column-gap: 4rem;
@@ -222,6 +211,15 @@ body {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.button-grid span {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: auto;
+  z-index: 2;
+  background: rgba(217, 217, 217, 0.8);
 }
 
 .home-btn {
@@ -235,6 +233,8 @@ body {
   overflow: hidden;
   text-decoration: none;
   text-align: center;
+  width: 300px;
+  height: 300px;
 }
 
 .home-btn img {
@@ -249,12 +249,12 @@ body {
   max-width: 90%;
   text-align: center;
   line-height: 1.2;
-  font-size: clamp(1.4rem, 1.6vw + 0.2rem, 2.5rem);
+  font-size: clamp(1.1rem, 1.4vw, 3rem);
 }
 
 .quiz-title .quiz-the {
   font-family: "Didot LT STD", Arial, sans-serif;
-  font-size: 1.625rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
 }
 
@@ -262,50 +262,6 @@ body {
   font-family: "Didot LT STD Italic", serif;
   font-style: italic;
   font-weight: normal;
-}
-
-/* Only apply square sizing to the 3 lower buttons */
-.button-grid a:not(.mission-btn) {
-  width: clamp(300px, 30vw, 450px);
-  height: clamp(300px, 30vw, 450px);
-}
-
-.button-grid a:not(.mission-btn) img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mission-btn span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.button-grid a:nth-child(2) span {
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  top: auto;
-}
-
-.button-grid a:nth-child(3) span {
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -35%);
-  bottom: auto;
-}
-
-.button-grid a:nth-child(4) span {
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -35%);
-  bottom: auto;
 }
 
 /*---Start of Quiz Page---*/
@@ -871,8 +827,12 @@ body {
   .homepage {
     height: 100vh;
     overflow: hidden;
-    padding-top: 10rem;
   }
+
+  .home-btn {
+  width: 300px;
+  height: 300px;
+}
 
   .cta {
     position: absolute;
@@ -891,23 +851,11 @@ body {
   }
 
   .button-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 3rem;
     row-gap: 3rem;
     max-width: 1100px;
     justify-content: center;
-  }
-
-  .button-grid a:not(.mission-btn) {
-    width: 30vw;
-    max-width: 300px;
-    aspect-ratio: 1 / 1;
-    max-height: 300px;
-  }
-
-  .mission-btn {
-    width: clamp(520px, 60vw, 680px);
-    height: 100px;
   }
 
   .brand-icon {
@@ -1084,24 +1032,18 @@ body {
     overflow: hidden;
   }
 
+  .home-btn {
+  width: 200px;
+  height: 200px;
+}
+
   .button-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
     row-gap: 1.5rem;
     max-width: 850px;
     justify-content: center;
     align-items: center;
-  }
-
-  .button-grid a:not(.mission-btn) {
-    width: 28vw;
-    max-width: 320px;
-    aspect-ratio: 1 / 1;
-  }
-
-  .mission-btn {
-    width: clamp(440px, 60vw, 600px);
-    height: 80px;
   }
 
   .brand-icon {
@@ -1264,11 +1206,6 @@ body {
     row-gap: 1.5rem;
   }
 
-  .mission-btn {
-    grid-column: 1;
-    max-width: 400px;
-  }
-
   .section-title {
     margin-bottom: 2rem;
   }
@@ -1279,14 +1216,6 @@ body {
 
   .home-btn span {
     font-size: 2rem;
-  }
-
-  .button-grid a:not(.mission-btn) {
-    width: 90vw;
-    max-width: 400px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
   }
 
   .article-grid {
@@ -1447,5 +1376,13 @@ body {
   font-family: "Avenir Next", Arial, sans-serif;
   font-size: 1rem;
   margin: auto;
+}
+
+.home-btn>span {
+  font-size: 1.5rem;
+}
+
+.quiz-title .quiz-me {
+  font-size: 1.5rem;
 }
 }
