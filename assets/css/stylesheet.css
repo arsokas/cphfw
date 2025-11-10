@@ -1071,12 +1071,14 @@ body {
   }
 
   .button-grid {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 1.5rem;
-    max-width: 850px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0rem;
+    row-gap: 1rem;
+    max-width: 500px;
+  }
+
+  .button-grid span, .button-grid .quiz-the {
+    font-size: 1.10rem;
   }
 
   .brand-icon {
