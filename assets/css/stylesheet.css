@@ -1338,7 +1338,7 @@ body {
   }
 
   .footer img {
-    width: 40px;
+    width: 49px;
   }
 
   .quiz-grid h1 {
@@ -1411,7 +1411,7 @@ body {
   .quiz-page-start .question-text {
     font-size: 1.2rem;
     width: 100%;
-    top: 60%;
+    top: 50%;
   }
 
   .quiz-page-start .question-title {
@@ -1426,4 +1426,24 @@ body {
     padding: 1rem;
     font-size: 1rem;
   }
+
+  .quiz-page-start .quiz-feedback-container {
+  position: absolute;
+  top: 80%;
+  left: 2rem;
+  width: 70%;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
+  z-index: 2;
+  font-family: "Avenir Next", Arial, sans-serif;
+  padding: 2rem;
+  margin: auto;
+}
+
+.quiz-page-start .quiz-feedback-container p{
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1rem;
+  margin: auto;
+}
 }
