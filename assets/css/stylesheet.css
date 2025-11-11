@@ -171,8 +171,13 @@ body {
   cursor: pointer;
 }
 
-
-/* Homepage/Index.html layout */
+/* */
+/*
+/*
+/* START OF INDEX.HTLM */
+/*
+/*
+/* */
 .homepage {
   position: relative;
   width: 100%;
@@ -182,7 +187,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,15 +197,13 @@ body {
 
 .homepage h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(2rem, 6vw, 4rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(2rem, 6vw, 8.125rem);
   margin-bottom: 2.5rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
 }
 
-/* Home Buttons with Images */
 .button-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -209,7 +212,7 @@ body {
   column-gap: 4rem;
   row-gap: 2.5rem;
   width: 100%;
-  max-width: 1500px;
+  max-width: 2056px;
   margin: 0 auto;
 }
 
@@ -223,7 +226,6 @@ body {
 }
 
 .home-btn {
-  font-family: "Didot LT STD", Arial, sans-serif;
   font-weight: 700;
   position: relative;
   display: flex;
@@ -233,36 +235,41 @@ body {
   overflow: hidden;
   text-decoration: none;
   text-align: center;
-  width: 300px;
-  height: 300px;
 }
 
 .home-btn img {
-  width: 100%;
-  height: auto;
+  width: 450px;
+  height: 450px;
 }
 
 .home-btn>span {
+  font-family: "Didot LT STD", Arial, sans-serif;
   position: absolute;
   color: black;
   width: 90%;
   max-width: 90%;
   text-align: center;
   line-height: 1.2;
-  font-size: clamp(1.1rem, 1.4vw, 3rem);
+  font-size: clamp(1.1rem, 2rem, 3rem);
 }
 
 .quiz-title .quiz-the {
   font-family: "Didot LT STD", Arial, sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.08em;
+  font-size: 2rem;
 }
 
 .quiz-title .quiz-me {
   font-family: "Didot LT STD Italic", serif;
-  font-style: italic;
   font-weight: normal;
 }
+
+/* */
+/*
+/*
+/* END OF INDEX.HTLM */
+/*
+/*
+/* */
 
 .quiz-page {
   position: relative;
@@ -641,7 +648,7 @@ body {
   /* places it behind the buttons */
 }
 
-.article-grid a {
+.article-grid {
   position: relative;
   z-index: 3;
   overflow: visible;
@@ -651,7 +658,7 @@ body {
   /* gives slight “pop-out” */
 }
 
-.article-grid a img {
+.article-grid img {
   width: auto;
   height: 120%;
   max-height: 120%;
@@ -725,7 +732,7 @@ body {
   margin: auto;
 }
 
-.quiz-page-start .quiz-feedback-container p{
+.quiz-page-start .quiz-feedback-container p {
   font-family: "Avenir Next", Arial, sans-serif;
   font-size: 2rem;
   margin: auto;
@@ -819,18 +826,52 @@ body {
   z-index: 2;
 }
 
+/* */
+/*
+/*
+/* START OF RESPONSIVE RULES */
+/*
+/*
+/* */
 /* --- Large screens down to laptops --- */
 @media (max-width: 1700px) and (min-width: 1251px) {
 
+  /* Start of Index.html */
   .homepage {
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    padding-top: 8rem;
   }
 
-  .home-btn {
-  width: 300px;
-  height: 300px;
-}
+  .homepage h1 {
+    font-size: 4rem;
+  }
+
+  .button-grid {
+    max-width: 1600px;
+
+    column-gap: 0rem;
+  }
+
+  .home-btn img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home-btn>span {
+    width: 70%;
+    max-width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .quiz-title .quiz-the {
+    font-family: "Didot LT STD", Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+  /* End of Index.html */
+
+
+
+
 
   .cta {
     position: absolute;
@@ -848,14 +889,6 @@ body {
     font-size: 1.5rem;
   }
 
-  .button-grid {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 3rem;
-    row-gap: 3rem;
-    max-width: 1100px;
-    justify-content: center;
-  }
-
   .brand-icon {
     width: clamp(160px, 9vw, 240px);
   }
@@ -866,7 +899,7 @@ body {
     padding: 2rem 3rem;
   }
 
-  .article-grid a {
+  .article-grid {
     height: clamp(240px, 40vh, 460px);
     transform: translateY(-2rem);
   }
@@ -876,7 +909,7 @@ body {
     width: 55%;
   }
 
-  .article-grid a img {
+  .article-grid img {
     width: auto;
     height: 100%;
     max-height: 100%;
@@ -919,8 +952,8 @@ body {
   }
 
   .back-arrow {
-  bottom: 6rem;
-}
+    bottom: 6rem;
+  }
 
 
   .homepage-brands h1 {
@@ -1024,25 +1057,30 @@ body {
 
 /* --- Laptop screens --- */
 @media (max-width: 1250px) and (min-width: 901px) {
-
+  /* Start of Index.html */
   .homepage {
     height: 100vh;
     overflow: hidden;
   }
 
   .home-btn {
-  width: 200px;
-  height: 200px;
-}
+    width: 200px;
+    height: 200px;
+  }
 
   .button-grid {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 1.5rem;
-    max-width: 850px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0rem;
+    row-gap: 1rem;
+    max-width: 500px;
   }
+
+  .button-grid span, .button-grid .quiz-the {
+    font-size: 1.10rem;
+  }
+  /* End of Index.html */ 
+
+
 
   .brand-icon {
     width: clamp(130px, 9vw, 200px);
@@ -1065,7 +1103,7 @@ body {
     text-align: center;
   }
 
-  .article-grid a {
+  .article-grid {
     transform: none;
     height: clamp(250px, 35vh, 400px);
   }
@@ -1078,7 +1116,7 @@ body {
     right: -3rem;
   }
 
-  .article-grid a img {
+  .article-grid img {
     height: 100%;
     max-height: 100%;
   }
@@ -1114,6 +1152,7 @@ body {
 
 /*--- Small screens ---*/
 @media (max-width: 902px) {
+
   html,
   body {
     overflow-y: auto;
@@ -1231,12 +1270,12 @@ body {
     text-align: left;
   }
 
-  .article-grid a {
+  .article-grid {
     height: clamp(200px, 45vh, 380px);
     transform: none;
   }
 
-  .article-grid a img {
+  .article-grid img {
     height: 100%;
     max-height: 100%;
   }
@@ -1357,30 +1396,30 @@ body {
   }
 
   .quiz-page-start .quiz-feedback-container {
-  position: absolute;
-  top: 80%;
-  left: 2rem;
-  width: 70%;
-  height: 2.5rem;
-  background-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-50%);
-  z-index: 2;
-  font-family: "Avenir Next", Arial, sans-serif;
-  padding: 2rem;
-  margin: auto;
-}
+    position: absolute;
+    top: 80%;
+    left: 2rem;
+    width: 70%;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: "Avenir Next", Arial, sans-serif;
+    padding: 2rem;
+    margin: auto;
+  }
 
-.quiz-page-start .quiz-feedback-container p{
-  font-family: "Avenir Next", Arial, sans-serif;
-  font-size: 1rem;
-  margin: auto;
-}
+  .quiz-page-start .quiz-feedback-container p {
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-size: 1rem;
+    margin: auto;
+  }
 
-.home-btn>span {
-  font-size: 1.5rem;
-}
+  .home-btn>span {
+    font-size: 1.5rem;
+  }
 
-.quiz-title .quiz-me {
-  font-size: 1.5rem;
-}
+  .quiz-title .quiz-me {
+    font-size: 1.5rem;
+  }
 }
