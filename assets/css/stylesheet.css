@@ -933,7 +933,6 @@ body {
   .quiz-page-start .questions-box-background {
     height: 20rem;
   }
-
   /* End of an quizquestion page */
   /* Start of Quiz Home Page */
   .quiz-grid h1 {
@@ -941,10 +940,12 @@ body {
     top: 10%;
     left: 65%;
   }
-  
+
+  /* Footer Arrow back */
   .back-arrow {
     bottom: 6rem;
   }
+  /* End of Footer Arrow back */
   
   .homepage-brands h1 {
     font-size: 3rem;
