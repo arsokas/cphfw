@@ -264,56 +264,54 @@ body {
   font-weight: normal;
 }
 
-/*---Start of Quiz Page---*/
 .quiz-page {
   position: relative;
   width: 100%;
-  height: 100%;
   min-height: 100vh;
   background-image: url("../img/quiz_baner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   display: flex;
-  align-items: flex-end;
-  /* aligns button toward bottom */
-  justify-content: center;
-  padding: 2rem;
+  align-items: center;       /* vertical center */
+  justify-content: flex-end; /* move content to right */
   box-sizing: border-box;
+}
+
+.quiz-grid {
+  display: flex;
+  flex-direction: column;    /* stack h1 and button */
+  align-items: flex-start;   /* left-align text inside the group */
+  margin-right: 8rem;        /* push away from right edge */
+  gap: 1rem;                 /* spacing between elements */
 }
 
 .quiz-grid h1 {
   font-family: "Didot LT STD", serif;
   font-size: clamp(4rem, 8vw + 0.5rem, 8.125rem);
-  /* simple viewport width (vw), 1vw is 1% of your screen width */
-  margin-bottom: 2.5rem;
   color: white;
   text-transform: uppercase;
-  top: 5%;
-  position: absolute;
-  top: 10%;
-  right: 25%;
+  margin: 0;
 }
 
 .quiz-btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  color: rgb(7, 7, 7);
-  background-color: #ffffff;
-  font-family: "Avenir Next Condensed Demi Bold", Arial, sans-serif;
-  opacity: 0.65;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
   text-decoration: none;
-  border-radius: 25px;
-  margin-bottom: 4vw;
+  font-size: 2rem;
+  font-family: "Avenir Next Condensed Demi Bold", Arial, sans-serif;
+  color: black;
+  font-weight: 500;
 }
 
 /* Transparent info box on the left side */
 .quiz-info {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 65%;
+  left: 15%;
   width: 25%;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
