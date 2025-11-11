@@ -941,11 +941,6 @@ body {
     left: 65%;
   }
 
-  /* Footer Arrow back */
-  .back-arrow {
-    bottom: 6rem;
-  }
-  /* End of Footer Arrow back */
   
   .homepage-brands h1, .homepage-materials h1 {
     font-size: 3rem;
@@ -957,15 +952,21 @@ body {
     width: 7vw;
   }
 
+  .error-content {
+    padding: 1rem 1rem;
+  }
+  
+  /* Footer Arrow back */
+  .back-arrow {
+    bottom: 6rem;
+  }
+  /* End of Footer Arrow back */
+  /* Start of Page 404 button to home */
   .back-home {
     font-size: 1rem;
     padding: 0.8rem 3.8rem;
   }
-
-  .error-content {
-    padding: 1rem 1rem;
-  }
-
+  /* End of Page 404 button to home */
 }
 
 /* --- Laptop screens --- */
@@ -976,24 +977,22 @@ body {
     overflow: hidden;
   }
 
-  .home-btn {
+  .home-btn img{
     width: 200px;
     height: 200px;
   }
 
   .button-grid {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0rem;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
     row-gap: 1rem;
-    max-width: 500px;
+    max-width: 900px;
   }
 
   .button-grid span, .button-grid .quiz-the {
     font-size: 1.10rem;
   }
   /* End of Index.html */ 
-
-
 
   .brand-icon {
     width: clamp(130px, 9vw, 200px);
@@ -1340,4 +1339,10 @@ body {
   .quiz-title .quiz-me {
     font-size: 1.5rem;
   }
+  /* Start of Page 404 button to home */
+  .back-home {
+    font-size: 1rem;
+    padding: 0.8rem 3.8rem;
+  }
+  /* End of Page 404 button to home */
 }
