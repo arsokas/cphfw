@@ -246,7 +246,7 @@ body {
   font-family: "Didot LT STD", Arial, sans-serif;
   position: absolute;
   color: black;
-  width: 90%;
+  min-width: 75%;
   max-width: 90%;
   text-align: center;
   line-height: 1.2;
@@ -858,8 +858,6 @@ body {
   }
 
   .home-btn>span {
-    width: 70%;
-    max-width: 90%;
     font-size: 1.5rem;
   }
 
@@ -1415,7 +1413,7 @@ body {
     margin: auto;
   }
 
-  .home-btn>span {
+  .home-btn span {
     font-size: 1.5rem;
   }
 
