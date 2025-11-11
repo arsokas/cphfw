@@ -821,6 +821,7 @@ body {
   width: 40%;
   color: #111;
   font-family: "Avenir Next", Arial, sans-serif;
+  text-align: center;
   font-size: 2rem;
   line-height: 1.4;
   z-index: 2;
@@ -866,19 +867,7 @@ body {
     font-size: 1.5rem;
   }
   /* End of Index.html */
-
-
-
-
-
-  .cta {
-    position: absolute;
-    text-align: center;
-    top: 25rem;
-    right: 1rem;
-    width: 400px;
-  }
-
+  /* Start of Screensaver.html start exploring cta */
   .cta a {
     font-size: 2rem;
   }
@@ -886,92 +875,75 @@ body {
   .cta p {
     font-size: 1.5rem;
   }
-
-  .brand-icon {
-    width: clamp(160px, 9vw, 240px);
-  }
-
+  /* End of Screensaver.html start exploring cta */
+  /* Start of an article page */
   .article-grid {
     width: 70vw;
-    column-gap: 6rem;
-    padding: 2rem 3rem;
-  }
-
-  .article-grid {
     height: clamp(240px, 40vh, 460px);
     transform: translateY(-2rem);
+    padding: 0.5rem;
   }
 
   .article-text {
-    font-size: clamp(1rem, 2vw, 1.6rem);
     width: 55%;
+    font-size: 1.5rem;
   }
 
   .article-grid img {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
-    /* allows it to extend slightly beyond box */
-    object-fit: contain;
-    padding-top: 2rem;
+    height: 120%;
+    max-height: 120%;
   }
 
+  .article-page h1 {
+    font-size: 3rem;
+  }
+  /* End of an article page */
+  /* Start of an quizquestion page */
   .quiz-page-start .question-text {
-    position: absolute;
     top: 15%;
-    text-align: center;
     left: 5%;
-    transform: translateY(-50%);
-    width: 40%;
-    color: #111;
-    font-family: "Avenir Next", Arial, sans-serif;
     font-size: 2rem;
-    line-height: 1.4;
-    z-index: 2;
+  }
+
+  .back-arrow img, .quiz-back-arrow img {
+    width: 49px;
+  }
+  
+  .quiz-page-start .quiz-question-number {
+    font-size: 2rem;
   }
 
   .quiz-page-start .quiz-box {
-    position: absolute;
-    top: 60%;
-    right: 5%;
-    transform: translateY(-50%);
     width: 30rem;
-    height: 40rem;
-    background-color: rgba(240, 240, 240, 1);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 30rem;
   }
 
-  .back-arrow img {
-    width: 40px;
+  .quiz-page-start .answer-btn {
+    font-size: 1.5rem;
   }
 
+  .quiz-page-start .questions-box-background {
+    height: 20rem;
+  }
+
+  /* End of an quizquestion page */
+  /* Start of Quiz Home Page */
+  .quiz-grid h1 {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+  }
+  
   .back-arrow {
     bottom: 6rem;
   }
-
-
+  
   .homepage-brands h1 {
     font-size: 3rem;
   }
 
   .homepage-materials h1 {
     font-size: 3rem;
-  }
-
-  .article-page h1 {
-    font-size: 3rem;
-  }
-
-  .article-text {
-    font-size: 1.5rem;
-  }
-
-  .article-grid {
-    padding: 0.5rem;
   }
 
   .button-to-quiz {
@@ -987,68 +959,6 @@ body {
 
   .error-content {
     padding: 1rem 1rem;
-  }
-
-  .quiz-page-start .quiz-question-number {
-    font-size: 2rem;
-  }
-
-  .quiz-page-start .quiz-box {
-    position: absolute;
-    top: 60%;
-    right: 15%;
-    transform: translateY(-50%);
-    width: 30rem;
-    height: 30rem;
-    background-color: rgba(240, 240, 240, 1);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .quiz-page-start .answer-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 100%;
-  }
-
-  /* Each answer button */
-  .quiz-page-start .answer-btn {
-    width: 100%;
-    padding: 1.3rem 0;
-    font-family: "Avenir Next Condensed Regular", Arial, sans-serif;
-    font-size: 1.5rem;
-    background-color: #887E7E;
-    color: white;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .quiz-page-start .questions-box-background {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    width: 100%;
-    height: 20rem;
-    background-color: rgba(255, 255, 255, 0.35);
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-
-  .quiz-back-arrow img {
-    width: 40px;
-  }
-
-  .quiz-grid h1 {
-    position: absolute;
-    top: 10%;
-    left: 65%;
   }
 
 }
@@ -1222,6 +1132,11 @@ body {
 
   .homepage-materials {
     overflow-y: auto;
+  }
+
+  .home-btn img {
+    width: 350px;
+    height: 350px;
   }
 
   .menu-grid {
