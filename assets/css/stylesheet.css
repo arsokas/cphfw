@@ -940,7 +940,6 @@ body {
     top: 10%;
     left: 65%;
   }
-
   
   .homepage-brands h1, .homepage-materials h1 {
     font-size: 3rem;
@@ -998,6 +997,11 @@ body {
     width: clamp(130px, 9vw, 200px);
   }
 
+  /* Article Page */
+  .article-page h1 {
+    font-size: 3rem;
+  }
+  
   .article-grid {
     width: 85vw;
     padding: 1rem 2rem;
