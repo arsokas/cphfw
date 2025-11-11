@@ -611,6 +611,9 @@ body {
   justify-content: flex-start;
   box-sizing: border-box;
 }
+.designer-background {
+  background-image: url("../img/BrandsDesignersbackground.png");
+}
 
 .article-page h1 {
   font-family: "Didot LT STD", serif;
