@@ -947,11 +947,7 @@ body {
   }
   /* End of Footer Arrow back */
   
-  .homepage-brands h1 {
-    font-size: 3rem;
-  }
-
-  .homepage-materials h1 {
+  .homepage-brands h1, .homepage-materials h1 {
     font-size: 3rem;
   }
 
