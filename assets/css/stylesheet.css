@@ -997,7 +997,7 @@ body {
     width: clamp(130px, 9vw, 200px);
   }
 
-  /* Article Page */
+  /* Start of Article Page */
   .article-page h1 {
     font-size: 3rem;
   }
@@ -1007,39 +1007,30 @@ body {
     padding: 1rem 2rem;
     column-gap: 4rem;
     overflow: visible;
-  }
-
-  .article-grid::before {
-    background: rgba(217, 217, 217, 0.45);
+    height: clamp(250px, 35vh, 400px);
+    transform: none;
   }
 
   .article-text {
-    width: 80%;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    text-align: center;
-  }
-
-  .article-grid {
-    transform: none;
-    height: clamp(250px, 35vh, 400px);
+    font-size: 1.5rem;
   }
 
   #prevBtn {
-    left: -3rem;
+    left: -4rem;
   }
 
   #nextBtn {
-    right: -3rem;
+    right: -4rem;
   }
 
-  .article-grid img {
-    height: 100%;
-    max-height: 100%;
+  .slider button{
+    font-size: 3rem;
   }
+  /* End of Article Page */
 
   .quiz-page-start .question-text {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 5%;
     transform: translateY(-50%);
     width: 40%;
@@ -1050,19 +1041,26 @@ body {
     z-index: 2;
   }
 
+  .quiz-page-start .quiz-question-number {
+    font-size: 4rem;
+  }
+
   .quiz-page-start .quiz-box {
-    position: absolute;
-    top: 60%;
-    right: 5%;
-    transform: translateY(-50%);
     width: 30rem;
-    height: 40rem;
-    background-color: rgba(240, 240, 240, 1);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 30rem;
+    right: 5%;
+  }
+
+  .quiz-page-start .answer-btn {
+    font-size: 1.5rem;
+  }
+
+  .quiz-page-start .questions-box-background {
+    height: 20rem;
+  }
+
+  .quiz-page-start .quiz-feedback-container {
+    width: 400px;
   }
 }
 
