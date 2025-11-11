@@ -827,6 +827,11 @@ body {
   z-index: 2;
 }
 
+#prevBtn a, #nextBtn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* */
 /*
 /*
