@@ -860,7 +860,7 @@ position: relative;
 
 .mission-hero img {
   width: 100%;
-  height: 13rem;
+  height: 12rem;
   max-width: 100%;
   object-fit: cover;
 }
@@ -869,7 +869,7 @@ position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 3rem 5rem 3rem 0;
+  padding: 1rem 3rem 0 1rem;
   gap: 3rem;
   align-items: flex-start;
 }
@@ -878,9 +878,8 @@ position: relative;
   width: 70%;
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+  padding: 2rem;
   padding-top: 0;
-  margin-top: -1.5rem;
   max-width: 70%;
 }
 
@@ -888,10 +887,22 @@ position: relative;
   font-family: "Didot LT STD", serif;
   color: white;
   text-transform: uppercase;
-  font-size: 3rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
   text-align: left;
+}
+
+.our-mission .mission-content h2 {
+  font-family: "Didot LT STD Italic", serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 1rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.35);
 }
 
 .our-mission .mission-content p {
@@ -912,10 +923,10 @@ position: relative;
 }
 
 .our-mission .mission-content-image img {
-  width: 100%;
-  height: 27rem;
+  width: 80%;
+  height: 23.5rem;
   object-fit: cover;
-  padding-right: 6rem;
+  padding-right: 8rem;
 }
 
 /* */
