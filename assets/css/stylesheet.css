@@ -622,6 +622,7 @@ body {
   text-transform: uppercase;
 }
 
+
 /* Transparent box behind material images */
 .article-grid {
   position: relative;
@@ -827,6 +828,43 @@ body {
   z-index: 2;
 }
 
+/* Start of an article page */
+.mission-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-hero img {
+  margin: 7.5rem;
+  width: 95%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+
+.our-mission h1 {
+  font-family: "Didot LT STD", serif;
+  font-size: 3rem;
+  color: rgb(94, 20, 20);
+  text-transform: uppercase;
+  margin: 3rem 0 2rem 5rem;
+}
+
+.article-page p {
+ 
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: white;
+  max-width: 60rem;
+  margin: 0 0 3rem 5rem; 
+}
+
+
 /* */
 /*
 /*
@@ -876,28 +914,9 @@ body {
     font-size: 1.5rem;
   }
   /* End of Screensaver.html start exploring cta */
-  /* Start of an article page */
-  .article-grid {
-    width: 70vw;
-    height: clamp(240px, 40vh, 460px);
-    transform: translateY(-2rem);
-    padding: 0.5rem;
-  }
 
-  .article-text {
-    width: 55%;
-    font-size: 1.5rem;
-  }
-
-  .article-grid img {
-    height: 120%;
-    max-height: 120%;
-  }
-
-  .article-page h1 {
-    font-size: 3rem;
-  }
   /* End of an article page */
+
   /* Start of an quizquestion page */
   .quiz-page-start .question-text {
     top: 15%;
