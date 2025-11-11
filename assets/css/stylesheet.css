@@ -840,7 +840,7 @@ body {
 position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../img/material1.jpg");
+  background-color: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
