@@ -666,7 +666,7 @@ body {
   height: 120%;
   max-height: 120%;
   /* allows it to extend slightly beyond box */
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .article-grid a.show {
@@ -677,7 +677,6 @@ body {
   font-family: "Avenir Next";
   font-size: clamp(1rem, 3vw, 2rem);
   max-width: 100%;
-  width: 20%;
 }
 
 .button-to-quiz {
