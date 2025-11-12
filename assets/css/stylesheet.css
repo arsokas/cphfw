@@ -987,7 +987,7 @@ position: relative;
   }
 
   .back-arrow img, .quiz-back-arrow img {
-    width: 49px;
+    width: 35px;
   }
   
   .quiz-page-start .quiz-question-number {
@@ -1427,6 +1427,17 @@ position: relative;
 
   .our-mission .mission-content h1 {
   font-size: 2.5rem;
-  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  }
+
+  .our-mission .mission-content {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.our-mission .mission-content h2 {
+  width: 100%;
 }
 }
