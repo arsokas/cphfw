@@ -1420,4 +1420,8 @@ position: relative;
     padding: 0.8rem 3.8rem;
   }
   /* End of Page 404 button to home */
+  /* Our Mission Page */
+  .mission-sections {
+    padding-bottom: 10rem;
+  }
 }
