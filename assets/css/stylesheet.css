@@ -1280,11 +1280,11 @@ position: relative;
   }
 
   #prevBtn {
-    left: 0.5rem;
+    left: 0;
   }
 
   #nextBtn {
-    right: 0.5rem;
+    right: 0;
   }
 
   .footer img {
