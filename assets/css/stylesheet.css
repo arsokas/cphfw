@@ -877,7 +877,6 @@ position: relative;
   color: white;
   text-transform: uppercase;
   font-size: 2.5rem;
-
 }
 
 .our-mission .mission-content h2 {
@@ -1426,4 +1425,9 @@ position: relative;
   .mission-sections {
     padding-bottom: 10rem;
   }
+
+  .our-mission .mission-content h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
 }
