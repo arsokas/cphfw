@@ -1233,6 +1233,7 @@ position: relative;
     padding: 1rem 0;
     column-gap: 0;
     row-gap: 1.5rem;
+    min-height: 500px;
   }
 
   .section-title {
@@ -1247,14 +1248,6 @@ position: relative;
     font-size: 2rem;
   }
 
-  .article-grid {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 90vw;
-    padding: 1rem;
-    row-gap: 1.5rem;
-  }
 
   .article-text {
     width: 70%;
