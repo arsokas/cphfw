@@ -486,7 +486,7 @@ body {
 
 .homepage-materials h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  font-size: clamp(4.5rem, 8vw + 0.5rem, 8.125rem);
   /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 2.5rem;
@@ -839,9 +839,11 @@ body {
 /*Start of our mission page */
 .our-mission {
 position: relative;
+
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+
+  background-image: url("../img/back_img_mission.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
