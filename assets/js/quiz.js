@@ -6,26 +6,31 @@ const questions = [
     number: 1,
     text: "What material is known as the most sustainable?",
     answers: ["Cotton", "Linen", "Polyester"],
+    correctAnswer: 1, // Index of the correct answer (Linen)
   },
   {
     number: 2,
     text: "Which fabric uses the least water to produce?",
     answers: ["Wool", "Silk", "Hemp"],
+    correctAnswer: 2, // Index of the correct answer (Hemp)
   },
   {
     number: 3,
     text: "What color symbolizes sustainability?",
     answers: ["Red", "Blue", "Green"],
+    correctAnswer: 2, // Index of the correct answer (Green)
   },
   {
     number: 4,
     text: "Which brand promotes eco-fashion?",
     answers: ["H&M Conscious", "Zara Fast", "Gucci Regular"],
+    correctAnswer: 0, // Index of the correct answer (H&M Conscious)
   },
   {
     number: 5,
     text: "What is the key idea of slow fashion?",
     answers: ["Buy less, choose well", "Fast trends", "Daily shopping"],
+    correctAnswer: 0, // Index of the correct answer (Buy less, choose well)
   },
 ];
 
@@ -52,7 +57,7 @@ function showQuestion(index) {
   answerButtons.innerHTML = "";
 
   // Loop through all answers for the current question
-  q.answers.forEach((answer) => {
+  q.answers.forEach((answer, answerIndex) => {
     // Create a new <button> element for each answer
     const btn = document.createElement("button");
 
@@ -63,16 +68,40 @@ function showQuestion(index) {
     btn.classList.add("answer-btn");
     
     // When clicked, run the function handleAnswer()
-    btn.addEventListener("click", () => handleAnswer());
+    btn.addEventListener("click", () => handleAnswer(answerIndex, btn));
     // Add the button into the "answer-buttons" container
     answerButtons.appendChild(btn);
   });
 }
 
 // --- Function that runs when a player clicks an answer ---
-function handleAnswer() {
-  // Show a small popup message saying "Nice!"
-  showNotification("Nice! Moving to next question...");
+function handleAnswer(selectedIndex, clickedButton) {
+  // Get the current question
+  const q = questions[currentQuestion];
+  
+  // Check if the answer is correct
+  const isCorrect = selectedIndex === q.correctAnswer;
+  
+  // Disable all buttons to prevent multiple clicks
+  const allButtons = answerButtons.querySelectorAll('.answer-btn');
+  allButtons.forEach(btn => btn.disabled = true);
+  
+  // Change the correct answer to green
+  allButtons[q.correctAnswer].style.backgroundColor = "#4CAF50"; // Green color
+  allButtons[q.correctAnswer].style.color = "white";
+  
+  // If the selected answer is wrong, show it in red
+  if (!isCorrect) {
+    clickedButton.style.backgroundColor = "#f44336"; // Red color
+    clickedButton.style.color = "white";
+  }
+  
+  // Show a small popup message
+  if (isCorrect) {
+    showNotification("Nice! That's correct!");
+  } else {
+    showNotification("Not quite, but keep going!");
+  }
 
   // Move to the next question (increase index by 1)
   currentQuestion++;
@@ -80,7 +109,7 @@ function handleAnswer() {
   // If there are still questions left...
   if (currentQuestion < questions.length) {
     // ...wait a bit and then show the next one
-    setTimeout(() => showQuestion(currentQuestion), 4000);
+    setTimeout(() => showQuestion(currentQuestion), 3000);
   } else {
     // If we’ve reached the end of the quiz...
     setTimeout(() => {
