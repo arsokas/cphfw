@@ -617,7 +617,7 @@ body {
 
 .article-page h1 {
   font-family: "Didot LT STD", serif;
-  font-size: clamp(3rem, 8vw + 0.5rem, 8.125rem);
+  font-size: clamp(2rem, 8vw + 0.5rem, 8.125rem);
   /* simple viewport width (vw), 1vw is 1% of your screen width */
   letter-spacing: 0.05em;
   margin-bottom: 3rem;
