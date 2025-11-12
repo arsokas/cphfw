@@ -676,6 +676,8 @@ body {
 .article-text {
   font-family: "Avenir Next";
   font-size: clamp(1rem, 3vw, 2rem);
+  max-width: 100%;
+  width: 20%;
 }
 
 .button-to-quiz {
